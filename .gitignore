@@ -1,7 +1,6 @@
 venv
 *.pyc
 statcfiles
-backend_dmdb/.env
 .DS_Store
 .idea/
 .vscode/
