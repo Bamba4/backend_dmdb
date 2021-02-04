@@ -1,2 +1,2 @@
-web gunicorn dmdb.wsgi --log-file - --log-level debug
+web gunicorn backend_dmdb.wsgi --log-file - --log-level debug
 
