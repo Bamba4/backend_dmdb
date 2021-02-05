@@ -5,6 +5,7 @@ from graphql import GraphQLError
 from .type import TutorType, TutorInput
 from ..employe.helper import serializerEmployee
 from ..models import Tutor
+from ..serializers.serializer import TutorSerializer
 
 
 class CreateTutor(Mutation):

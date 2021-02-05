@@ -6,6 +6,7 @@ from graphql import GraphQLError
 
 from ..employe.helper import serializerEmployee
 from ..models import Tutor, GodParent, Student
+from ..serializers.serializer import StudentSerializer
 
 
 class CreateStudent(Mutation):

@@ -7,6 +7,7 @@ from .helper import serializerEmployee
 from .type import EmployeeType, InputEmployee
 from ..error.employeeException import EmailAlreadyExistException
 from ..models import Employee
+from ..serializers.serializer import EmployeeSerializer
 
 
 class CreateEmployee(Mutation):

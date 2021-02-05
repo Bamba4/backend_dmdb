@@ -6,6 +6,7 @@ from .type import GodParentType, GodParentInput
 from ..employe.helper import serializerEmployee
 from ..error.employeeException import EmailAlreadyExistException
 from ..models import GodParent
+from ..serializers.serializer import GodParentSerializer
 
 
 class CreateGodParent(Mutation):
