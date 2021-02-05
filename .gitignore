@@ -4,3 +4,4 @@ statcfiles
 .DS_Store
 .idea/
 .vscode/
+backend_dmdb/.env

@@ -92,11 +92,12 @@ DATABASES = {
         "ENGINE": "djongo",
         "NAME": env("DATABASE_NAME"),
         "HOST": env("DATABASE_URL"),
-        'USER': env("DATABASE_USER"),
+        'USERNAME': env("DATABASE_USER"),
         'PASSWORD': env("DATABASE_PASSWORD"),
+        'authMechanism': 'SCRAM-SHA-1'
+
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
