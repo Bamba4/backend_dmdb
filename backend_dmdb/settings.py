@@ -25,7 +25,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = env('SECRET_KEY', default="d&t@$o0n-+*#kzs_-!q451xx@&s0bm3@vzg&60v(su&1k1^wfm")
-ON_HEROKU = os.environ.get('ON_HEROKU')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG', default=False)
@@ -89,7 +88,7 @@ WSGI_APPLICATION = 'backend_dmdb.wsgi.application'
 
 DATABASES = {
         "default": {
-            "ENGINE": "djongo",
+            "ENGINE": "mongoengine",
             "NAME": env("DATABASE_NAME"),
             "HOST": env("DATABASE_URL"),
             'USERNAME': env("DATABASE_USER"),
