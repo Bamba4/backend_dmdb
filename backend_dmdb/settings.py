@@ -88,7 +88,7 @@ WSGI_APPLICATION = 'backend_dmdb.wsgi.application'
 
 DATABASES = {
         "default": {
-            "ENGINE": "mongoengine",
+            "ENGINE": "djongo",
             "NAME": env("DATABASE_NAME"),
             "HOST": env("DATABASE_URL"),
             'USERNAME': env("DATABASE_USER"),
