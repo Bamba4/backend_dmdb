@@ -52,6 +52,8 @@ class Student(models.Model):
     id = models.BigAutoField(primary_key=True)
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
+    mother = models.CharField(max_length=50, default=None)
+    father = models.CharField(max_length=50, default=None)
     address = models.CharField(max_length=50, blank=True, null=True)
     date_of_birth = models.DateTimeField(default=None, null=True)
     surate = models.CharField(max_length=50, blank=True, null=True)

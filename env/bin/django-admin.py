@@ -1,4 +1,4 @@
-#!/Users/cheikhahmadoubambadiagne/Desktop/backend_dmdb/env/bin/python3
+#!/Users/cheikhahmadoubambadiagne/Documents/backend_dmdb/env/bin/python
 from django.core import management
 
 if __name__ == "__main__":

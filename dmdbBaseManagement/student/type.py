@@ -17,6 +17,8 @@ class StudentInput(InputObjectType):
     id = Int()
     first_name = String()
     last_name = String()
+    mother = String()
+    father = String()
     address = String()
     date_of_birth = DateTime()
     surate = String()
