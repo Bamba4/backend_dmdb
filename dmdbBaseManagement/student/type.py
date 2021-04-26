@@ -1,4 +1,4 @@
-from graphene import  String, DateTime, InputObjectType, Int
+from graphene import  String, DateTime, InputObjectType, Int, Boolean
 
 
 from graphene_django import DjangoObjectType
@@ -24,6 +24,16 @@ class StudentInput(InputObjectType):
     surate = String()
     joined_at = DateTime()
     avatar = String()
+    pseudonyme = String()
+    is_memorize_quran = Boolean()
+    is_recite_all_quran = Boolean()
+    date_to_recit_all_quran = DateTime()
+    is_write_quran = Boolean()
+    current_surate = String()
+    date_of_memorize_quran = DateTime()
+    date_to_start_write_quran = DateTime()
+    current_write_quran = String()
+    date_to_finish_write_quran = DateTime()
     god_parent_id = Int()
     tutor_id = Int()
     tutor = TutorInput()
